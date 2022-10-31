@@ -1,0 +1,148 @@
+header{
+    height: 100vh;
+    padding-top: 1rem;
+    overflow: hidden;
+    
+}
+
+.change_theme{
+    align-items: center;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 2.5rem;
+    padding: 1.5rem 1rem;
+    border-radius: 2rem;
+    background-color: var(--color-shadow);
+    width: max-content;
+    display: flex;
+    gap: 0.5rem;
+    border: 1px solid var(--color-yellow);
+    color: var(--color-yellow);
+    cursor: pointer;
+    transition: var(--transition);
+    
+}
+
+.change_theme:hover{
+    color: var(--color-yellow);
+    box-shadow:1rem 2rem 5rem  var(--color-shadow);
+}
+
+
+.change_theme:active{
+    color: var(--color-yellow);
+    box-shadow:none;
+}
+
+
+
+
+.header_container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+    
+    
+}
+
+
+
+/*===================CTA=================*/
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+
+/*===================HEADER SOCIALS=================*/
+.header_socials{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 2.5rem;
+    bottom: 3rem;
+}
+
+.header_socials::after{
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+
+/*===================ME=================*/
+.me{
+    background: linear-gradient(var(--color-primary),transparent);
+    width: 22rem;
+    height: 25rem;
+    position: absolute;
+    left: 50%;
+    margin-top: 4rem;
+    
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+    transform: translateX(-50%);
+    transition: var(--transition);
+    
+}
+
+.me:hover {
+    box-shadow:1rem 2rem 5rem  var(--color-shadow);
+}
+
+.scroll{
+    
+    position: absolute;
+    right: 2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+
+/*========================MEDIA QUERIES (SMALL DEVICES)=============*/
+
+
+@media screen and (max-width: 1024px){
+    Header{
+        height: 68vh;
+    }
+    .header_socials, .scroll{
+        display: none;
+}
+}
+/*========================MEDIA QUERIES (SMALL DEVICES)=============*/
+
+
+@media screen and (max-width: 600px){
+     Header{
+        height: 100vh;
+     }
+
+     .header_socials, .scroll{
+        display: none;
+     }
+
+     .change_theme {
+        font-size: 1rem;
+        position: absolute;
+        top: 0.5rem;
+        left: 1rem;
+        padding: 0.5rem ;
+        border-radius: 50%;
+        justify-content: center;
+     }
+     .change_theme span {
+        display: none;
+     }
+
+}
