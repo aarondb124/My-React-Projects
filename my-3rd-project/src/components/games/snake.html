@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>JavaScript Snake game</title>
+
+<style>
+    canvas {background: rgb(22, 2, 2)}
+    .Container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        max-width: 50rem;
+        margin: 0 auto;
+        gap: 2rem;
+        
+    }
+
+    .coloum1 {
+        background: linear-gradient(red, green);
+        
+    }
+</style>
+
+<script src="snake.js"></script>
+</head>
+
+<body style="background-color:rgb(168, 10, 230)"
+onload="init();">
+<div class="Container">
+    <div class="Container coloum1">
+        <p style="font-size:30px">Wanna play Snake game?</p>
+    </div>
+    <div class="Container coloum2">
+        <canvas id="myCanvas" width="300" height="300">
+        </canvas>
+    </div>
+</div>
+
+</body>
+</html>

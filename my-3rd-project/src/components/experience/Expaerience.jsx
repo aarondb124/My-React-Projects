@@ -11,16 +11,33 @@ import { SiCplusplus } from 'react-icons/si'
 import { SiPython } from 'react-icons/si'
 import { GrNode } from 'react-icons/gr'
 
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 
 const Expaerience = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   return (
+
     <section id='Experience'>
+
       <h5>What Skills I Have</h5>
       <h2>My Experience</h2>
-
+     
       <div className="container experience_container">
-        <div className="experience_frontend">
+        
+        <div className="experience_frontend" 
+        data-aos="fade-right"
+        data-aos-duration="800"
+        data-aos-offset="250"
+     data-aos-easing="ease-in-sine"
+        >
           <h3>Frontend Development</h3>
           <div className="experience_content">
             <article className='experience_details'>
@@ -60,9 +77,15 @@ const Expaerience = () => {
             </article>
           </div>
         </div>
+        
 
-
-        <div className="experience_backend">
+        
+        <div className="experience_backend"
+         data-aos="fade-left"
+         data-aos-duration="800"
+         data-aos-offset="250"
+         data-aos-easing="ease-in-sine"
+         >
           <h3>Backend Development</h3>
           <div className="experience_content">
           <article className='experience_details'>
@@ -102,7 +125,9 @@ const Expaerience = () => {
             </article>
           </div>
         </div>
+        
       </div>
+
 
     </section>
   )

@@ -5,35 +5,70 @@ import { RiAwardFill } from 'react-icons/ri'
 import { FiUsers } from 'react-icons/fi'
 import { VscFolderActive } from 'react-icons/vsc'
 
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const About = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
+
   return (
     <section id='about' >
        
        <h5>Get to know</h5>
        <h2>About Me</h2>
 
-       <div className="container about_container">
+       <div className="container about_container"
+       data-aos="fade-right"
+       data-aos-duration="800"
+       data-aos-offset="250"
+       data-aos-easing="ease-in-sine"
+       >
         <div className="about_me">
           <div className="about_me-image">
             <img src={Me} alt="About" />
           </div>
         </div>
 
-        <div className="about_content">
-          <div className="about_cards">
-            <article className='about_card'>
+        <div className="about_content"
+        data-aos="fade-left"
+        data-aos-duration="800"
+        data-aos-offset="250"
+        data-aos-easing="ease-in-sine"
+        >
+          <div className="about_cards" >
+            <article className='about_card'
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-offset="400"
+            data-aos-easing="ease-in-sine"
+            >
                   < RiAwardFill className='about_icon' />
               <h5>Experiences</h5>
-              <small>No Experience</small>
+              <small>2+ Experiences</small>
             </article>
 
-            <article className='about_card'>
+            <article className='about_card'
+            data-aos="fade-left"
+            data-aos-duration="900"
+            data-aos-offset="400"
+            data-aos-easing="ease-in-sine"
+            >
                   < FiUsers className='about_icon' />
               <h5>Clients</h5>
               <small>20+</small>
             </article>
 
-            <article className='about_card'>
+            <article className='about_card'
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-offset="400"
+            data-aos-easing="ease-in-sine"
+            >
                   < VscFolderActive className='about_icon' />
               <h5>Projects</h5>
               <small>2+ Completed</small>

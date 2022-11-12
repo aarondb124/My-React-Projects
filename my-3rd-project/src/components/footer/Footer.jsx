@@ -20,10 +20,20 @@ const Footer = () => {
         <li><a href="#testimonials">Testimonials</a></li>
       </ul>
 
-      <div className="portfolio_socials">
-        <a href="https://facebook.com"><FaFacebookF/></a>
-        <a href="https://instagram.com"><FiInstagram/></a>
-        <a href="https://twitter.com"><BsTwitter/></a>
+      <div className="portfolio_socials"
+      
+      >
+        <a 
+        href="https://m.me/michel.andrew.5015/"
+          
+        ><FaFacebookF/></a>
+        <a
+         href="https://www.instagram.com/aaron_debakor_biswas/"
+          
+          ><FiInstagram/></a>
+        <a href="https://twitter.com"
+        
+        ><BsTwitter/></a>
       </div>
 
       <div className="footer_copyright">

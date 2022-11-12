@@ -1,5 +1,6 @@
 .container  {
     padding: 2rem;
+    padding-bottom: 6rem;
     border-radius: 2rem;
     
 }
@@ -9,8 +10,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
     width: 90%;
-    
-    
+        
 }
 
 .portfolio_item {
@@ -24,7 +24,7 @@
 .portfolio_item:hover {
     border-color: var(--color-primary-variant);
     background: transparent;
-    box-shadow:1rem 2rem 5rem  var(--color-shadow);
+    box-shadow:1rem 2rem 3rem  var(--color-shadow);
 }
 
 .portfolio_item-image {
@@ -39,12 +39,15 @@
 
 .porfolio_item-cta {
     display: flex;
-    gap: 1rem;
+    flex-direction: row;
+    padding-bottom: 1rem;
+    gap: 2rem;
     margin-bottom: 1rem;
     
-    
-    
 }
+
+
+
 .swiper-button-prev {
     color: var(--color-primary,var(--color-bg-variant));
 }
@@ -69,7 +72,9 @@
     padding: 2rem;
    }
    .porfolio_item-cta{
-    display:inline-table;
+    display:inline-flexbox;
+    gap: 2rem;
+    
     
    }
    

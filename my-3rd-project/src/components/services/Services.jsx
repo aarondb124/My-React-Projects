@@ -12,7 +12,12 @@ const Services = () => {
       
       {/*UI/UX Design*/}
 
-      <article className="service">
+      <article className="service" 
+      data-aos="zoom-out-right"
+      data-aos-duration="1000"
+      data-aos-offset="300"
+      
+      >
           <div className="service_head">
             <h3>Microsoft Office</h3>
           </div>
@@ -55,7 +60,12 @@ const Services = () => {
 
          {/*Web Development*/}
 
-        <article className="service">
+        <article className="service"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        data-aos-offset="300"
+        
+        >
           <div className="service_head">
             <h3>Web Development</h3>
           </div>
@@ -97,7 +107,12 @@ const Services = () => {
 
         {/*Content Creation*/}
 
-        <article className="service">
+        <article className="service"
+        data-aos="zoom-out-left"
+        data-aos-duration="1000"
+        data-aos-offset="300"
+        
+        >
           <div className="service_head">
             <h3>Technical Support</h3>
           </div>

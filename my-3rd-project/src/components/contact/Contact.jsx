@@ -6,8 +6,17 @@ import {ImWhatsapp} from 'react-icons/im';
 import { useRef } from 'react';
 import emailjs from 'emailjs-com'
 
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Contact = () => {
+  
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -31,21 +40,33 @@ const Contact = () => {
 
       <div className="container contact_container">
         <div className="contact_options">
-          <article className='contact_option'>
+          <article className='contact_option'
+          data-aos="fade-right"
+          data-aos-duration="800"
+          data-aos-offset="150"
+          >
             <MdOutlineMail className='contact_option-icon'/>
             <h4>Email</h4>
             <h5>aarondb124@gmail.com</h5>
             <a href="mailto:aarondb124@gmail.com">Send a message</a>
           </article>
 
-          <article className='contact_option'>
+          <article className='contact_option'
+          data-aos="fade-right"
+          data-aos-duration="900"
+          data-aos-offset="150"
+          >
             <RiMessengerLine className='contact_option-icon'/>
             <h4>Messenger</h4>
             <h5>Aaron</h5>
             <a href="https://m.me/michel.andrew.5015/">Send a message</a>
           </article>
 
-          <article className='contact_option'>
+          <article className='contact_option'
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-offset="150"
+          >
             <ImWhatsapp className='contact_option-icon'/>
             <h4>WhatsApp</h4>
             <h5>+8801918617195</h5>
@@ -53,11 +74,15 @@ const Contact = () => {
           </article>
         </div>
         {/*END OF CONTACT OPTION */}
-        <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name='name' placeholder='Your Full Name' required/>
+        <form ref={form} onSubmit={sendEmail}
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-offset="250"
+        >
+          <input type="text" name='name'  placeholder='Your Full Name' required/>
           <input type="email" name='email' placeholder='Your Email' required/>
           <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
-          <button type='submit' className='btn btn-primary'>Send Message</button>
+          <button  type='submit'  className='btn btn-primary'>Send Message</button>
         </form>
       </div>
       

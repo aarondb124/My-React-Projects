@@ -5,7 +5,7 @@ import './Header.css';
 import CTA from './CTA';
 import Me from '../../assets/pp.png';
 import HeaderSocials from './HeaderSocials';
-import {BsMoonStarsFill} from 'react-icons/bs'
+import {FaCloudMoon} from 'react-icons/fa'
 import {FaSun} from 'react-icons/fa'
 
 const Header = () => {
@@ -21,7 +21,7 @@ const Header = () => {
     }
   };
 
-  const icon = theme === "light-theme" ? < BsMoonStarsFill /> : < FaSun />;
+  const icon = theme === "light-theme" ? < FaCloudMoon /> : < FaSun />;
 
   const mode = theme === "light-theme" ?  "Night Mode"  :  "Day Mode" ;
 

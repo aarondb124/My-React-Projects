@@ -52,12 +52,16 @@ const Testimonials = () => {
       <Swiper className="container testimonials_container"
       // install Swiper modules
       modules={[Navigation, Pagination]}
-      spaceBetween={40}
+      spaceBetween={50}
       slidesPerView={1}
       navigation
       pagination={{ clickable: true }}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
+
+      data-aos="zoom-out"
+        data-aos-duration="800"
+        data-aos-offset="150"
       >
         {
           data.map(({avatar, name, review}, index) => {

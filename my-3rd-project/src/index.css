@@ -69,7 +69,9 @@ body{
     
     width: var(--container-width-lg);
     margin: 0 auto;
-    
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    display: flexbox;
 }
 
 
@@ -83,6 +85,7 @@ h1{
 }
 
 section{
+    scroll-snap-align: start;
     margin-top: 8rem;
     
 }

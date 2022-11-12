@@ -7,11 +7,11 @@ header{
 
 .change_theme{
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     position: absolute;
     top: 1.5rem;
     left: 2.5rem;
-    padding: 1.5rem 1rem;
+    padding: 1rem;
     border-radius: 2rem;
     background-color: var(--color-shadow);
     width: max-content;
@@ -109,7 +109,7 @@ header{
 }
 
 
-/*========================MEDIA QUERIES (SMALL DEVICES)=============*/
+/*========================MEDIA QUERIES (MEDIUM DEVICES)=============*/
 
 
 @media screen and (max-width: 1024px){
