@@ -4,6 +4,9 @@
     border-radius: 2rem;
     
 }
+#portfolio{
+    margin-top: 0%;
+}
 
 .portfolio_container {
     display: grid;
@@ -35,6 +38,13 @@
 
 .portfolio_item h3 {
     margin: 1.2rem 0 2rem;
+}
+.portfolio_item h2{
+    margin: 1rem;
+}
+
+.portfolio_item h5{
+    margin-bottom: 1rem;
 }
 
 .porfolio_item-cta {

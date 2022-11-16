@@ -1,0 +1,89 @@
+
+  
+  /* Tooltip text */
+  .ctaa-snake .tooltiptext {
+    font-size: 1rem;
+    visibility: hidden;
+    display: flexbox;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    top: 3.2rem;
+    left: -2.5rem;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .ctaa-snake:hover .tooltiptext {
+    visibility: visible;
+  }
+
+.ctaa-snake{
+    position: relative;
+    display: flex;
+    gap: 1.2rem;
+    
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+
+ /* Tooltip text */
+ .cta-back .tooltiptext {
+  font-size: 1rem;
+  visibility: hidden;
+  display: flexbox;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  top: 3.2rem;
+  left: -2.5rem;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.cta-back:hover .tooltiptext {
+  visibility: visible;
+}
+
+.pagination{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.cta-back{
+  position: relative;
+  display: flex;
+  gap: 1.2rem;
+  
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding: 0.5rem;
+  font-size: 2rem;
+}
+
+#swiper{
+    margin: 0%;
+}
+#swiper h2{
+    margin: 0%;
+}

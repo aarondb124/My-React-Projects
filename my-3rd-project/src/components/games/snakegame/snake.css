@@ -1,0 +1,89 @@
+#game-container{
+    display: flex;
+    flex-direction: column;
+    background: rgba(220, 220, 220, 0.089);
+}
+
+.game-canvas{
+    width: var(--container-width-lg);
+    height: 100vw;
+    max-width: 500px;
+    max-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.icons{
+    color: var(--color-light);
+}
+
+.keys{
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 200px;
+    margin: auto;
+}
+
+.up,.down,.right,.left{
+    position: relative;
+    top: -15px;
+}
+
+.chevron::before{
+   border:8px 8px 0 0 solid;
+   content: '';
+   display: inline-block;
+   height: 20px;
+   width: 20px;
+   top: -10px;
+   position: relative;
+   justify-content: center;
+   
+}
+
+
+.chevron.down::before{
+    
+    top: -22px;
+ }
+ 
+ .chevron.right::before{
+     top: -18px;
+     left: -5px;
+  }
+ 
+  .chevron.left::before{
+     top: 18px;
+     left: 5px;
+  }
+
+
+ .arr {
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 100px;
+    background: gray;
+    color: white;
+    font-size: 50px;
+    border-right: 10px solid #ccc;
+    border-bottom: 10px solid #ccc;
+    border-left: 10px solid #ddd;
+    border-top: 10px solid #eee;
+    display: inline-block;
+    margin: 5px;
+    transition: all 0.05s linear;
+    user-select: none;
+    -webkit-transition: all 0.05s linear;
+    -moz-transition: all 0.05s linear;
+    -ms-transition: all 0.05s linear;
+    -o-transition: all 0.05s linear;
+}
+
+.arr:active{
+    background: #555;
+}
