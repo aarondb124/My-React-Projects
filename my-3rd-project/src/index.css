@@ -85,7 +85,7 @@ h1{
 }
 
 section{
-    scroll-snap-align: start;
+   
     margin-top: 8rem;
     
 }
@@ -166,23 +166,28 @@ img {
 @media screen and (max-width: 1024px){
     .container{
         width: var(--container-width-md);
+        
     }
 
-    selection{
+    section {
       margin-top: 6rem;
+     
     }
-}
 
+    
+}
 
 /*========================MEDIA QUERIES (SMALL DEVICES)=============*/
-
-
-@media screen and (max-width: 600px){
-    .container{
-        width: var(--container-width-ms);
+@media screen and (max-width: 1024px){
+    html,body {
+        width: 100%;
+        height: auto;
+        margin: 0%;
+        padding: 0%;
+        overflow-x: hidden;
     }
 
-    selection{
-      margin-top: 2rem;
-    }
+    
 }
+
+

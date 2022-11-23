@@ -3,14 +3,13 @@ import "./portfolio.css";
 
 import IMG1 from "../../assets/portfolio1.png";
 import IMG2 from "../../assets/portfolio2.png";
-import IMG3 from "../../assets/portfolio3.jpg";
-import IMG4 from "../../assets/portfolio4.jpg";
-import IMG5 from "../../assets/portfolio5.jpg";
-import IMG6 from "../../assets/portfolio6.jpg";
+import IMG3 from "../../assets/portfolio3.png";
+import IMG4 from "../../assets/portfolio4.png";
+import IMG5 from "../../assets/portfolio5.png";
+import IMG6 from "../../assets/portfolio6.png";
 
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
+
 
 
 // import Swiper core and required modules
@@ -28,8 +27,8 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: "Portfolio 1",
-    description:"",
+    title: "First Portfolio",
+    description:"Click the get demo button",
     github: "https://github.com",
     demo: "http://aarondb.infinityfreeapp.com/Page-1/indexpage.html",
   },
@@ -38,53 +37,51 @@ const data = [
     id: 2,
     image: IMG2,
     title: "Snake game",
-    description:"Click the snake button above",
+    description:"Click the button above or get demo",
     github: "https://github.com",
-    demo: "../games/snakegame/Snake1.jsx",
+    demo: "https://aarondangshu.xyz/Snake%20Game/",
   },
 
   {
     id: 3,
     image: IMG3,
-    title: "Portfolio 3",
-    description:"",
+    title: "Movie App",
+    description:"Click the get demo button",
     github: "https://github.com",
-    demo: "http://aarondb.infinityfreeapp.com/Page-1/indexpage.html",
+    demo: "http://aarondangshu.xyz/movieapp/",
   },
 
   {
     id: 4,
     image: IMG4,
-    title: "Portfolio 4",
-    description:"",
+    title: "Keyboard Hero",
+    description:"Click the get demo button",
     github: "https://github.com",
-    demo: "http://aarondb.infinityfreeapp.com/Page-1/indexpage.html",
+    demo: "http://aarondangshu.xyz/keyboardHero/",
   },
 
   {
     id: 5,
     image: IMG5,
-    title: "Portfolio 5",
-    description:"",
+    title: "Portfolio 2.0",
+    description:"Click the get demo button",
     github: "https://github.com",
-    demo: "http://aarondb.infinityfreeapp.com/Page-1/indexpage.html",
+    demo: "http://aarondangshu.xyz/Portfolio2/",
   },
 
   {
     id: 6,
     image: IMG6,
-    title: "Portfolio 6",
-    description:"",
+    title: "Tic Tac Toe",
+    description:"Click the get demo button",
     github: "https://github.com",
-    demo: "http://aarondb.infinityfreeapp.com/Page-1/indexpage.html",
+    demo: "http://aarondangshu.xyz/Tic-Tac-Toe/",
   },
 ];
 
 const Portfolio = () => {
 
-  useEffect(() => {
-    AOS.init();
-  }, [])
+
 
   return (
     <section id="portfolio">
@@ -115,9 +112,9 @@ const Portfolio = () => {
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
 
-        data-aos="zoom-out"
-        data-aos-duration="800"
-        data-aos-offset="250"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        data-aos-offset="300"
       >
         {data.map(({ id, image, title, description, github, demo }) => {
           return (

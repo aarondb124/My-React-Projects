@@ -68,25 +68,22 @@
    
    
    @media screen and (max-width: 600px){
+
     .experience_container{
         gap: 1rem;
-        padding: 1rem;
-        margin: 0;
-
+         width: 100%;
+       
     }
-
+    
     .experience_container > div {
         width: 100%;
-        padding: 0;
-        margin: 0;
     }
+
     .experience_container > div h3 {
         margin: 1rem;
+        
+       
     }
    }
 
-   @media screen and (max-width: 200px){
-    .experience_container{
-        padding: 0;
-    }
-   }
+   

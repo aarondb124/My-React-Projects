@@ -1,5 +1,6 @@
 {
   "name": "my-2nd-project",
+  "homepage": "https://aarondb.xyz",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -7,9 +7,9 @@ import { BsFacebook } from "react-icons/bs";
 const HeaderSocials = () => {
   return (
     <div className='header_socials'>
-      <a href="https://www.linkedin.com/in/aaron-d-angshu-3b2228193/" target="_self">< BsLinkedin /></a>
-      <a href="https://github.com" target="_self">< BsGithub /></a>
-      <a href="https://facebook.com" target="_self"><BsFacebook/></a>
+      <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/aaron-d-angshu-3b2228193/" >< BsLinkedin /></a>
+      <a target="_blank" rel="noreferrer" href="https://github.com/aarondb124" >< BsGithub /></a>
+      <a target="_blank" rel="noreferrer" href="https://m.me/michel.andrew.5015/" ><BsFacebook/></a>
     </div>
   )
 }

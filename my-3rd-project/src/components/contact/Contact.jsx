@@ -35,7 +35,7 @@ const Contact = () => {
   return (
     <section id='contact'>
       <h5>Get In Touch</h5>
-      <h2>Contact Me</h2>
+      <h2>&lt;Contact Me&#47;&gt;</h2>
 
 
       <div className="container contact_container">
@@ -48,7 +48,7 @@ const Contact = () => {
             <MdOutlineMail className='contact_option-icon'/>
             <h4>Email</h4>
             <h5>aarondb124@gmail.com</h5>
-            <a href="mailto:aarondb124@gmail.com">Send a message</a>
+            <a target="_blank" rel="noreferrer" href="mailto:aarondb124@gmail.com">Send a message</a>
           </article>
 
           <article className='contact_option'
@@ -59,18 +59,18 @@ const Contact = () => {
             <RiMessengerLine className='contact_option-icon'/>
             <h4>Messenger</h4>
             <h5>Aaron</h5>
-            <a href="https://m.me/michel.andrew.5015/">Send a message</a>
+            <a target="_blank" rel="noreferrer" href="https://m.me/michel.andrew.5015/">Send a message</a>
           </article>
 
           <article className='contact_option'
           data-aos="fade-right"
           data-aos-duration="1000"
-          data-aos-offset="150"
+          data-aos-offset="50"
           >
             <ImWhatsapp className='contact_option-icon'/>
             <h4>WhatsApp</h4>
             <h5>+8801918617195</h5>
-            <a href="https://api.whatsapp.com/send?phone+8801918617195">Send a message</a>
+            <a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone+8801918617195">Send a message</a>
           </article>
         </div>
         {/*END OF CONTACT OPTION */}

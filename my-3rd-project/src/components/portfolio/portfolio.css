@@ -1,9 +1,6 @@
-.container  {
-    padding: 2rem;
-    padding-bottom: 6rem;
-    border-radius: 2rem;
+
     
-}
+
 #portfolio{
     margin-top: 0%;
 }
@@ -12,8 +9,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
-    width: 90%;
-        
+    width: 100%;
+    padding: 2rem;
+    padding-bottom: 6rem;
+    border-radius: 2rem;
 }
 
 .portfolio_item {
@@ -77,8 +76,8 @@
 @media screen and (max-width: 1024px){
    .portfolio_container{
     grid-template-columns: 1fr 1fr;
-    width: 80%;
-    margin: auto;
+    
+    margin: 0;
     padding: 2rem;
    }
    .porfolio_item-cta{
@@ -96,7 +95,7 @@
     .container.portfolio_container{
         grid-template-columns: 1fr;
         
-        width: 90%;
+        
         margin: auto;
     }
 

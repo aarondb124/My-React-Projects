@@ -339,7 +339,7 @@ const Snake1 = () => {
   Snake.setup.fixedTail(false);
 
   return (
-      <section class="game-section">
+      <section class="game-section" >
         <h5>
           Use these keys to play
           <WiDirectionUp className="icons" />
@@ -348,8 +348,8 @@ const Snake1 = () => {
           <BsArrowRight className="icons" />
         </h5>
 
-        <div class="Container">
-          <div id="game-container">
+        <div class="Container" >
+          <div id="game-container" >
             <canvas id="gc" className="game-canvas" width={400} height={400}></canvas>
           </div>
 

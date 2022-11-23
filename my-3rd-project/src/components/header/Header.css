@@ -79,19 +79,23 @@ header{
 
 /*===================ME=================*/
 .me{
+    display: flex;
+    flex-wrap: wrap;
     background: linear-gradient(var(--color-primary),transparent);
     width: 22rem;
     height: 25rem;
     position: absolute;
     left: 50%;
-    margin-top: 4rem;
-    
-    border-radius: 12rem 12rem 0 0;
+    margin-top: 1rem;
+    border-radius: 12rem 12rem 2rem 2rem;
     overflow: hidden;
-    padding: 3rem 1.5rem 1.5rem 1.5rem;
+    padding: 0rem 0rem 1rem 0rem;
     transform: translateX(-50%);
     transition: var(--transition);
-    
+    -webkit-border-radius: 12rem 12rem 2rem 2rem;
+    -moz-border-radius: 12rem 12rem 2rem 2rem;
+    -ms-border-radius: 12rem 12rem 2rem 2rem;
+    -o-border-radius: 12rem 12rem 2rem 2rem;
 }
 
 .me:hover {
@@ -124,9 +128,8 @@ header{
 
 
 @media screen and (max-width: 600px){
-     Header{
-        height: 100vh;
-     }
+  
+
 
      .header_socials, .scroll{
         display: none;
@@ -136,7 +139,7 @@ header{
         font-size: 1rem;
         position: absolute;
         top: 0.5rem;
-        left: 1rem;
+        left: 7rem;
         padding: 0.5rem ;
         border-radius: 50%;
         justify-content: center;

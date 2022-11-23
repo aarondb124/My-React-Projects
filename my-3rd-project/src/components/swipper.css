@@ -1,4 +1,9 @@
-
+#swiper{
+    margin-top: 6rem;
+}
+#swiper h2{
+    margin: 0%;
+}
   
   /* Tooltip text */
   .ctaa-snake .tooltiptext {
@@ -81,9 +86,6 @@
   font-size: 2rem;
 }
 
-#swiper{
-    margin: 0%;
-}
-#swiper h2{
-    margin: 0%;
-}
+
+
+

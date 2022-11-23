@@ -23,26 +23,27 @@ const Footer = () => {
       <div className="portfolio_socials"
       
       >
-        <a 
+        <a target="_blank" rel="noreferrer"
         href="https://m.me/michel.andrew.5015/"
           
         ><FaFacebookF/></a>
-        <a
+        <a target="_blank" rel="noreferrer"
          href="https://www.instagram.com/aaron_debakor_biswas/"
           
           ><FiInstagram/></a>
-        <a href="https://twitter.com"
+        <a target="_blank" rel="noreferrer" href="https://twitter.com"
         
         ><BsTwitter/></a>
       </div>
 
       <div className="footer_copyright">
-        <h5>This website is created with the help of <span style={{color: "green"}}>HTML</span>,
+        
+      <h5>This website is created with the help of <span style={{color: "green"}}>HTML</span>,
         <span style={{color: "red"}}>CSS</span>,
         <span style={{color: "yellow"}}>JSX</span>,
         <span style={{color: "lightblue"}}>Reactjs</span>,
         <span style={{color: "pink"}}>Emailjs</span>.
-        </h5>
+     </h5>
         <small>
           &copy;Aaron_Debakor.All right reserved.
         </small>

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './about.css';
 import Me from '../../assets/About-Me.jpeg'
 import { RiAwardFill } from 'react-icons/ri'
@@ -10,7 +11,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const About = () => {
-
+ 
   useEffect(() => {
     AOS.init();
   }, [])
@@ -20,7 +21,7 @@ const About = () => {
     <section id='about' >
        
        <h5>Get to know</h5>
-       <h2>About Me</h2>
+       <h2>&lt;About Me&#47;&gt;</h2>
 
        <div className="container about_container"
        data-aos="fade-right"
@@ -41,38 +42,46 @@ const About = () => {
         data-aos-easing="ease-in-sine"
         >
           <div className="about_cards" >
-            <article className='about_card'
+            
+            <a 
+            href='#Experience'
+            className='about_card'
             data-aos="fade-left"
-            data-aos-duration="800"
-            data-aos-offset="400"
+            data-aos-duration="700"
+           
             data-aos-easing="ease-in-sine"
             >
                   < RiAwardFill className='about_icon' />
               <h5>Experiences</h5>
               <small>2+ Experiences</small>
-            </article>
+            </a>
 
-            <article className='about_card'
+            <a 
+            href='#testimonials'
+            className='about_card'
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-offset="400"
+            data-aos-easing="ease-in-sine"
+            
+            >
+                  < FiUsers className='about_icon' />
+              <h5>Clients</h5>
+              <small>20+</small>
+            </a>
+
+            <a
+            href='#portfolio'
+            className='about_card'
             data-aos="fade-left"
             data-aos-duration="900"
             data-aos-offset="400"
             data-aos-easing="ease-in-sine"
             >
-                  < FiUsers className='about_icon' />
-              <h5>Clients</h5>
-              <small>20+</small>
-            </article>
-
-            <article className='about_card'
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            data-aos-offset="400"
-            data-aos-easing="ease-in-sine"
-            >
                   < VscFolderActive className='about_icon' />
               <h5>Projects</h5>
-              <small>2+ Completed</small>
-            </article>
+              <small>10+ Completed</small>
+            </a>
           </div>
           <p>
           I am a man of ambition. No matter how dififcult the task is, I will try my best to complete it. If I don't know the way to do it, I will find a way to accomplish it. Working hard is my only character. I truly believe in god. By his gress I can manage any dififcult situation.

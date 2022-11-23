@@ -73,8 +73,15 @@
     
     @media screen and (max-width: 600px){
         .services_container {
+            width: 100%;
             grid-template-columns: 1fr;
             gap: 1.5rem;
             padding: 1rem;
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+
+        .service{
+            width: 100%;
         }
     }

@@ -1,19 +1,22 @@
 nav{
     background: rgba(182, 178, 178, 0.3);
     width: max-content;
-    display: block;
     padding: 0.7rem 1.7rem;
     z-index: 2;
     position: fixed;
-    left: 50%;
-    transform: translate(-50%);
     bottom: 2rem;
-    display: flex;
     gap: 0.8rem;
     border-radius: 3rem;
     backdrop-filter: blur(15px);
+    display: flex;
+    overflow-x: auto;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
 }
-
 nav a {
     background: transparent;
     padding: 0.9rem;
@@ -38,8 +41,11 @@ nav a:active{
 
 @media screen and (max-width: 600px){
     nav{
-       height: auto;
-    }
+       
+        
+      height: auto;
+     
+}
 
 }
 

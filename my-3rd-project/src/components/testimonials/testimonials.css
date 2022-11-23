@@ -53,13 +53,10 @@
     /*========================MEDIA QUERIES (SMALL DEVICES)=============*/
     
     
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 1024px){
         .container.testimonials_container{
-
-            width: var(--container-width-sm);
+            width: 100%;
+            margin: 0;
+            padding: 0%;
         }
-        .client_review {
-            width: var(--container-width-sm);
-
         }
-    }

@@ -28,7 +28,7 @@ const Expaerience = () => {
     <section id='Experience'>
 
       <h5>What Skills I Have</h5>
-      <h2>My Experience</h2>
+      <h2>&lt;My Experience&#47;&gt;</h2>
      
       <div className="container experience_container">
         
@@ -38,7 +38,7 @@ const Expaerience = () => {
         data-aos-offset="250"
      data-aos-easing="ease-in-sine"
         >
-          <h3>Frontend Development</h3>
+          <h3>&lt;Frontend Development&#47;&gt;</h3>
           <div className="experience_content">
             <article className='experience_details'>
             < AiFillHtml5 className='experience_details-icons'/>
@@ -86,7 +86,7 @@ const Expaerience = () => {
          data-aos-offset="250"
          data-aos-easing="ease-in-sine"
          >
-          <h3>Backend Development</h3>
+          <h3>&#36;Backend Development&#36;</h3>
           <div className="experience_content">
           <article className='experience_details'>
             < SiPhp className='experience_details-icons'/>
