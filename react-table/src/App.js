@@ -1,12 +1,11 @@
-import React from 'react';
-import './App.css';
-import BasicTable from './components/BasicTable'
-
+import React from "react";
+import "./App.css";
+import SortingTable from "./components/SortingTable";
 
 const App = () => {
   return (
     <>
-      <BasicTable />
+      <SortingTable />
     </>
   );
 };

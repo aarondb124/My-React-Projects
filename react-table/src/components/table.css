@@ -13,10 +13,15 @@ table {
   
   table tr:hover {background-color: #ddd;}
   
-  table th {
+  table th, tfoot td {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: center;
     background-color: #040caa;
     color: white;
+  }
+
+  table th {
+    top: 0;
+    position: sticky;
   }
