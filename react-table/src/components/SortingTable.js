@@ -2,6 +2,7 @@ import React, { useMemo } from "react";
 import { useTable, useSortBy } from "react-table";
 import MOCK_DATA from "./MOCK_DATA.json";
 import { COLUMNS } from "./columns";
+import { FaSort } from "react-icons/fa";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { TiArrowSortedUp } from "react-icons/ti";
 import "./table.css";
@@ -35,13 +36,13 @@ const SortingTable = () => {
                 {column.render("Header")}
                 <span>
                   {column.isSorted ? (
-                    column.isSorteddDesc ? (
+                    column.isSortedDesc ? (
                       <TiArrowSortedDown />
                     ) : (
                       <TiArrowSortedUp />
                     )
                   ) : (
-                    ""
+                    <FaSort />
                   )}
                 </span>
               </th>
