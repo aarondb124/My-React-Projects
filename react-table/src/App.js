@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import SortingTable from "./components/SortingTable";
+import FilteringTable from "./components/FilteringTable";
 
 const App = () => {
   return (
     <>
-      <SortingTable />
+      <FilteringTable />
     </>
   );
 };
